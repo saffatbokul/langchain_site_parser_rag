@@ -1,7 +1,26 @@
 
 # Chat with a website using Langchain + Streamlit + Llama.cpp + Docker
 
-This is a very simple project that will crawl a website given the URL, save the content (HTML and PDF) to the memory and then. will allow users to chat with the website content. To get started do the following:
+This project will crawl a website given the URL, save the content (HTML and PDF) to the memory and then. will allow users to chat with the website content using the power of large language models (Microsoft Phi-2). To get you can either use my pre built docker container (easiest) or run it manually.
+
+## Using Docker
+
+The container is available at the [docker hub](https://hub.docker.com/layers/saffatbokul/langchain_site_parser_rag/latest/images/sha256-693cd1e7a3a816e08a4f5a54a5236d2ad1dc849145334ac67194a7fc98477fff?context=explore).
+
+You need docker [installed](https://docs.docker.com/engine/install/ubuntu/) on your system.
+
+After installing docker, run the following command to pull the image.
+
+```
+docker pull saffatbokul/langchain_site_parser_rag:latest
+```
+Now, run the image
+```
+docker run -p 8501:8501 langchain_site_parser_rag
+```
+You can also build you own image with the dockerfile provided in this repo.
+
+## Running Manually
 
 Clone the repo:
 
@@ -24,9 +43,8 @@ Go back to root directory, and create a virtual env (not shown). Then install th
 cd ../
 pip install -r requirements.txt
 ```
-Check if the server is working locally
+Run the app.
 ```
-streamlit run main.py --server.port 8080
+streamlit run main.py --server.port 8501
 ```
-If you want to dockerize this app, you need to install docker first on your system. Here is a command line installation guide for ubuntu -> https://docs.docker.com/engine/install/ubuntu/.
-
+Now open localhost:8501 and play with it !
