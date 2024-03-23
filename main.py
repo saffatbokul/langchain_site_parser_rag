@@ -11,7 +11,7 @@ with st.sidebar:
     st.markdown('Built with: **Streamlit** for frontend, **Langchain** for RAG functionality, **Llama.cpp** for loading the GGUF model, and **Docker** for deployment.')
     st.markdown('By default we are using a Q_4_k_M version of the _Phi-2_ model with 2.7 billion parameters from Microsoft.')
     st.markdown('This tool has been deployed on a server with a single ARM core (No GPU :( ), so please be patient with the text generation :)')
-    st.markdown('View the source code on [Github](https://duckduckgo.com)')
+    st.markdown('View the source code on [Github](https://github.com/saffatbokul/langchain_site_parser_rag/tree/main)')
 
 
 if "website_url" not in st.session_state:
