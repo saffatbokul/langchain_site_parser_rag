@@ -1,7 +1,7 @@
 
 # Chat with a website using Langchain + Streamlit + Llama.cpp + Docker
 
-This project will crawl a website given the URL, save the content (HTML and PDF) to the memory and then. will allow users to chat with the website content using the power of large language models (Microsoft Phi-2). To get you can either use my pre built docker container (easiest) or run it manually.
+This project will crawl a website given the URL, save the content (HTML and PDF) to the memory and then. will allow users to chat with the website content using the power of large language models (Microsoft Phi-2). To get started you can either use my pre built **docker container** (easiest) or run it manually.
 
 ## Using Docker
 
